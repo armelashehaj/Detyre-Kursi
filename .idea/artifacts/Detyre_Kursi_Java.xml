@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Detyre-Kursi-Java">
+    <output-path>$PROJECT_DIR$/out/artifacts/Detyre_Kursi_Java</output-path>
+    <root id="root">
+      <element id="archive" name="Detyre_Kursi_Java.jar">
+        <element id="module-output" name="Detyre-Kursi-Java" />
+      </element>
+    </root>
+  </artifact>
+</component>
