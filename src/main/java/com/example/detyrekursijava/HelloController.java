@@ -29,9 +29,7 @@ public class HelloController  extends Application {
     @FXML
     private Hyperlink merrMeVete;
 
-    public HelloController() throws FileNotFoundException {
-    }
-
+    private ArrayList<Artikull> tePerzgjedhurat = new ArrayList<>(10);
     @FXML
     protected void tabMenu(ActionEvent event) throws IOException {
         Stage stage = new Stage();
@@ -74,7 +72,6 @@ public class HelloController  extends Application {
     @FXML
     Button gjeneroFature = new Button();
     private ArrayList<Artikull> artikujDreke= new ArrayList<>();
-
     public void setArtikujDreke(){
         this.artikujDreke.add(new Artikull(1, "Supe Krem pule", 450.0));
         this.artikujDreke.add(new Artikull(2, "Supe Krem Brokoli", 400.0));
@@ -83,12 +80,7 @@ public class HelloController  extends Application {
         this.artikujDreke.add(new Artikull(5, "Oriz i skuqur me perime", 320.0));
         this.artikujDreke.add(new Artikull(6, "Oriz i skuqur me pule", 200.0));
     }
-
-   // ArrayList<Artikull> tePerzgjedhurat = new ArrayList<>();
-   private ObservableList<Artikull> tePerzgjedhurat = FXCollections.observableArrayList();
-
      ArrayList<Integer> sasia = new ArrayList<>(artikujDreke.size());
-    Scanner teDhena = new Scanner(System.in);
     @FXML
     protected void kontrolliIChekimeveDreke(ActionEvent event) throws IOException{
         int sasia = 0;
@@ -96,9 +88,7 @@ public class HelloController  extends Application {
         if(this.dreke1.isSelected()){
             sasia = Integer.parseInt(adreke1.getText());
             this.sasia.add( sasia);
-            tePerzgjedhurat.add(artikujDreke.get(0).setSasia(sasia).setTePerzgjedhurat());
-          //  this.tePerzgjedhurat.add(this.artikujDreke.get(0).setSasia(sasia));
-
+            this.tePerzgjedhurat.add(this.artikujDreke.get(0).setSasia(sasia));
             System.out.println(tePerzgjedhurat.get(0).emer + tePerzgjedhurat.get(0).cmimi);
         }
         if(this.dreke2.isSelected()){
@@ -109,6 +99,7 @@ public class HelloController  extends Application {
         }
        if(dreke3.isSelected()){
            sasia = Integer.parseInt(adreke3.getText());
+           System.out.println("Gjatesia e te perzgjedhura  " + tePerzgjedhurat.size());
            this.sasia.add( sasia);
            this.tePerzgjedhurat.add(this.artikujDreke.get(2).setSasia(sasia));
            System.out.println(tePerzgjedhurat.get(0).emer);
@@ -134,7 +125,6 @@ public class HelloController  extends Application {
     }
 
     /*per tabin mengjes*/
-
     @FXML
     CheckBox mengjes1 = new CheckBox();
     @FXML
@@ -178,38 +168,38 @@ public class HelloController  extends Application {
         if (mengjes1.isSelected()){
             sasia = Integer.parseInt(amengjes1.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujMengjes.get(0));
+           this.tePerzgjedhurat.add(this.artikujMengjes.get(0));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (mengjes2.isSelected()){
             sasia = Integer.parseInt(amengjes2.getText());
             this.sasia.add(sasia);
-            this.tePerzgjedhurat.add(artikujMengjes.get(1));
+            this.tePerzgjedhurat.add(this.artikujMengjes.get(1));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (mengjes3.isSelected()){
             sasia = Integer.parseInt(amengjes3.getText());
             this.sasia.add(sasia);
-            this.tePerzgjedhurat.add(artikujMengjes.get(2));
+            this.tePerzgjedhurat.add(this.artikujMengjes.get(2));
             System.out.println(tePerzgjedhurat.get(0).emer);
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (mengjes4.isSelected()){
             sasia = Integer.parseInt(amengjes4.getText());
             this.sasia.add(sasia);
-            this.tePerzgjedhurat.add(artikujMengjes.get(3));
+            this.tePerzgjedhurat.add(this.artikujMengjes.get(3));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (mengjes5.isSelected()){
             sasia = Integer.parseInt(amengjes5.getText());
             this.sasia.add(sasia);
-            this.tePerzgjedhurat.add(artikujMengjes.get(4));
+            this.tePerzgjedhurat.add(this.artikujMengjes.get(4));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (mengjes6.isSelected()){
             sasia = Integer.parseInt(amengjes6.getText());
             this.sasia.add(sasia);
-            this.tePerzgjedhurat.add(artikujMengjes.get(5));
+            this.tePerzgjedhurat.add(this.artikujMengjes.get(5));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
 
@@ -262,31 +252,31 @@ public class HelloController  extends Application {
         if (pije2.isSelected()){
             sasia = Integer.parseInt(apije2.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujPije.get(1));
+            tePerzgjedhurat.add(this.artikujPije.get(1));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if(pije3.isSelected()){
             sasia = Integer.parseInt(apije3.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujPije.get(2));
+            tePerzgjedhurat.add(this.artikujPije.get(2));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (pije4.isSelected()){
             sasia = Integer.parseInt(apije4.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujPije.get(3));
+            tePerzgjedhurat.add(this.artikujPije.get(3));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if(pije5.isSelected()){
             sasia = Integer.parseInt(apije5.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujPije.get(4));
+            tePerzgjedhurat.add(this.artikujPije.get(4));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
         if (pije6.isSelected()){
             sasia = Integer.parseInt(apije6.getText());
             this.sasia.add(sasia);
-            tePerzgjedhurat.add(artikujPije.get(5));
+            tePerzgjedhurat.add(this.artikujPije.get(5));
             System.out.println(tePerzgjedhurat.get(0).emer);
         }
 
@@ -306,17 +296,13 @@ public class HelloController  extends Application {
     Text textTest = new Text();
     @FXML
     VBox vendodhje = new VBox();
-        @FXML
-    ListView<Artikull> listaEPerzgjedhur = new ListView<>((ObservableList<Artikull>) tePerzgjedhurat);
+    //    @FXML
+  //  ListView<Artikull> listaEPerzgjedhur = new ListView<>((ObservableList<Artikull>) tePerzgjedhurat);
     public void ndrysho() {
         textTest.setText("tePerzgjedhurat.get(0).emer\n");
       //  textTest.setText(tePerzgjedhurat.get(0).emer + "une jam vazhdimi");
       //  textTest.setText(artikujMengjes.get(0).emer + "mengesi");
-        textTest.setText(tePerzgjedhurat.get(0).emer);
-
-        for(int i = 0 ; i < tePerzgjedhurat.size() ; i++) {
-            listaEPerzgjedhur.getItems().add(tePerzgjedhurat.get(i));
-        }
+        textTest.setText(this.tePerzgjedhurat.get(0).emer);
     }
 
 }
