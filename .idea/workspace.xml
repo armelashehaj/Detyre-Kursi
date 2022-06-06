@@ -7,7 +7,12 @@
     <list default="true" id="8bb3f13e-c9e7-4ed9-9438-33c3e2461b33" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/Artikull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/Artikull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/Fature.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava/fature.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava/per-dergesa.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava/per-dergesa.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +52,18 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22183909&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/detyrekursijava" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/detyrekursijava" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.detyrekursijava" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.detyrekursijava" />
@@ -151,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654425426358</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1654427678860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654427678860</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,5 +200,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Detyre_Kursi_Java$HelloApplication.ic" NAME="HelloApplication Coverage Results" MODIFIED="1654447008350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.detyrekursijava.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -3,24 +3,23 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="827.0" prefWidth="965.0"
-            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.detyrekursijava.HelloController">
+<AnchorPane prefHeight="827.0" prefWidth="1225.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.detyrekursijava.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="label" layoutX="4.0" prefHeight="45.0" prefWidth="864.0" text="Mulliri i Vjeter " />
-    <Label fx:id="mengjesi" layoutX="4.0" layoutY="59.0" prefHeight="22.0" prefWidth="168.0" text="Menu Mengjesi" userData="Menu Mengjesi" wrapText="true" />
-    <TextField fx:id="amengjes1" layoutX="750.0" layoutY="91.0" prefHeight="24.0" prefWidth="127.0" />
-    <TextField fx:id="amengjes2" layoutX="747.0" layoutY="119.0" prefHeight="24.0" prefWidth="133.0" />
-    <TextField fx:id="amengjes3" layoutX="741.0" layoutY="147.0" prefHeight="24.0" prefWidth="148.0" />
-    <TextField fx:id="amengjes4" layoutX="745.0" layoutY="172.0" prefHeight="24.0" prefWidth="141.0" />
-    <TextField fx:id="amengjes5" layoutX="745.0" layoutY="187.0" prefHeight="24.0" prefWidth="133.0" />
-    <TextField fx:id="amengjes6" layoutX="765.0" layoutY="213.0" prefHeight="24.0" prefWidth="118.0" />
+    <Label fx:id="label" layoutX="-1.0" prefHeight="45.0" prefWidth="869.0" text="Mulliri i Vjeter " />
+    <Label fx:id="mengjesi" layoutX="235.0" layoutY="40.0" prefHeight="37.0" prefWidth="337.0" text="Menu Mengjesi" userData="Menu Mengjesi" wrapText="true" />
+    <TextField fx:id="amengjes1" layoutX="748.0" layoutY="72.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes2" layoutX="748.0" layoutY="99.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes3" layoutX="748.0" layoutY="127.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes4" layoutX="748.0" layoutY="154.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes5" layoutX="748.0" layoutY="182.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes6" layoutX="748.0" layoutY="210.0" prefHeight="25.0" prefWidth="60.0" />
 
-    <ListView fx:id="listeEMengjesit" layoutY="89.0" prefHeight="157.0" prefWidth="666.0">
+    <ListView fx:id="listeEMengjesit" layoutY="72.0" prefHeight="166.0" prefWidth="666.0">
         <CheckBox fx:id="mengjes1" onAction="#kontrolliIChekimeveMengjes" text="Omlete Fshati                   220.0" />
         <CheckBox fx:id="mengjes2" onAction="#kontrolliIChekimeveMengjes" text="Omlete Franceze                    225.0" />
         <CheckBox fx:id="mengjes3" onAction="#kontrolliIChekimeveMengjes" text="Veze Benedikt                   400.0" />
@@ -29,15 +28,15 @@
         <CheckBox fx:id="mengjes6" onAction="#kontrolliIChekimeveMengjes" text="Veze sy                    200.0" />
     </ListView>
 
-    <Label fx:id="drekeDheDarke" layoutX="6.0" layoutY="262.0"  prefHeight="30.0" prefWidth="141.0" text="Dreka dhe darka" userData="Dreka dhe Darka" />
-    <TextField fx:id="adreke1" layoutX="778.0" layoutY="298.0" prefHeight="2.0" prefWidth="104.0" />
-    <TextField fx:id="adreke2" layoutX="778.0" layoutY="322.0" prefHeight="24.0" prefWidth="104.0" />
-    <TextField fx:id="adreke3" layoutX="778.0" layoutY="347.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="adreke4" layoutX="779.0" layoutY="372.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="adreke5" layoutX="780.0" layoutY="398.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="adreke6" layoutX="781.0" layoutY="420.0" prefHeight="24.0" prefWidth="104.0" />
+    <Label fx:id="drekeDheDarke" layoutX="202.0" layoutY="234.0" prefHeight="45.0" prefWidth="666.0" text="Dreka dhe darka" userData="Dreka dhe Darka" />
+    <TextField fx:id="adreke1" layoutX="748.0" layoutY="286.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke2" layoutX="748.0" layoutY="312.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke3" layoutX="748.0" layoutY="339.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke4" layoutX="748.0" layoutY="366.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke5" layoutX="748.0" layoutY="393.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke6" layoutX="748.0" layoutY="420.0" prefHeight="25.0" prefWidth="60.0" />
 
-    <ListView fx:id="artikullListView" layoutY="297.0" prefHeight="157.0" prefWidth="666.0">
+    <ListView fx:id="artikullListView" layoutY="282.0" prefHeight="159.0" prefWidth="666.0">
         <CheckBox fx:id="dreke1" onAction="#kontrolliIChekimeveDreke" text="Supe Krem pule                    450.0" />
         <CheckBox fx:id="dreke2" onAction="#kontrolliIChekimeveDreke" text="Supe Krem Brokoli                 400.0" />
         <CheckBox fx:id="dreke3" onAction="#kontrolliIChekimeveDreke" text="Fileto Pule                   550.0" />
@@ -46,15 +45,15 @@
         <CheckBox fx:id="dreke6" onAction="#kontrolliIChekimeveDreke" text="Oriz i skuqur me pule                 200.0" />
     </ListView>
 
-    <Label fx:id="pije" layoutX="-1.0" layoutY="453.0" prefHeight="24.0" prefWidth="283.0" text="Pije" userData="Menu Pije" />
-    <TextField fx:id="apije1" layoutX="778.0" layoutY="472.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="apije2" layoutX="778.0" layoutY="495.0" prefHeight="24.0" prefWidth="104.0" />
-    <TextField fx:id="apije3" layoutX="778.0" layoutY="521.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="apije4" layoutX="779.0" layoutY="546.0" prefHeight="22.0" prefWidth="104.0" />
-    <TextField fx:id="apije5" layoutX="783.0" layoutY="570.0" prefHeight="24.0" prefWidth="94.0" />
-    <TextField fx:id="apije6" layoutX="783.0" layoutY="598.0" prefHeight="24.0" prefWidth="94.0" />
+    <Label fx:id="pije" layoutX="202.0" layoutY="441.0" prefHeight="45.0" prefWidth="666.0" text="Pije" userData="Menu Pije" />
+    <TextField fx:id="apije1" layoutX="748.0" layoutY="483.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije2" layoutX="748.0" layoutY="506.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije3" layoutX="748.0" layoutY="529.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije4" layoutX="748.0" layoutY="553.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije5" layoutX="748.0" layoutY="576.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije6" layoutX="748.0" layoutY="600.0" prefHeight="25.0" prefWidth="60.0" />
 
-    <ListView fx:id="artikujPijeListView" layoutY="477.0" prefHeight="172.0" prefWidth="666.0">
+    <ListView fx:id="artikujPijeListView" layoutY="482.0" prefHeight="159.0" prefWidth="666.0">
         <CheckBox fx:id="pije1" onAction="#kontrolliIChekimevePije" text="Kakao                    350.0" />
         <CheckBox fx:id="pije2" onAction="#kontrolliIChekimevePije" text="Vanilla Frappe Coconout                 250.0" />
         <CheckBox fx:id="pije3" onAction="#kontrolliIChekimevePije" text="Fredo Caffe                   150.0" />
@@ -63,7 +62,10 @@
         <CheckBox fx:id="pije6" onAction="#kontrolliIChekimevePije" text="Kiwi Smoothie                 320.0" />
     </ListView>
 
-    <Button fx:id="gjeneroFature" layoutX="823.0" layoutY="676.0" prefHeight="14.0" prefWidth="127.0" text="Gjenero fature" />
-
-    <Hyperlink fx:id="merrMeVete" layoutX="29.0" layoutY="665.0" onAction="#tabMenu" prefHeight="45.0" prefWidth="148.0" text="Merr me vete" userData="Porosit me vete " />
+    <Text fx:id="textTest" layoutX="356.0" layoutY="45.0" wrappingWidth="216.0" />
+    <Button fx:id="gjeneroFature" layoutX="850.0" layoutY="580.0" onAction="#shtoNeFature" prefHeight="45.0" prefWidth="159.0" text="Gjenero fature" />
+    <Button fx:id="porosiOnline" layoutX="6.0" layoutY="673.0" onAction="#ndrysho" prefHeight="30.0" prefWidth="141.0" text="Porosi Online" />
+    <ListView fx:id="listView" layoutX="850.0" layoutY="98.0" prefHeight="416.0" prefWidth="354.0" />
+   <Label fx:id="sasite" layoutX="674.0" layoutY="30.0" prefHeight="37.0" prefWidth="216.0" text="Vendosni Sasine qe ju duhet " userData="Menu Mengjesi" wrapText="true" />
+   <Label fx:id="Fature" layoutX="919.0" layoutY="40.0" prefHeight="37.0" prefWidth="216.0" text="FATURA JUAJ " userData="Menu Mengjesi" wrapText="true" />
 </AnchorPane>
