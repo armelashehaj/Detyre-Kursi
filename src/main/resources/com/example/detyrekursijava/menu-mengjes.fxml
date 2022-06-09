@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.detyrekursijava.kontrolliKryesor">
+    <Label fx:id="label" layoutX="-1.0" prefHeight="45.0" prefWidth="869.0" text="Mulliri i Vjeter ">
+    <font>
+        <Font name="System Bold Italic" size="18.0" />
+    </font>
+    </Label>
+    <Label fx:id="mengjesi" layoutX="235.0" layoutY="40.0" prefHeight="37.0" prefWidth="337.0"
+           text="Menu Mengjesi" userData="Menu Mengjesi" wrapText="true" />
+
+    <TextField fx:id="amengjes1" layoutX="748.0" layoutY="72.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes2" layoutX="748.0" layoutY="99.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes3" layoutX="748.0" layoutY="127.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes4" layoutX="748.0" layoutY="154.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes5" layoutX="748.0" layoutY="182.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="amengjes6" layoutX="748.0" layoutY="210.0" prefHeight="25.0" prefWidth="60.0" />
+
+    <ListView fx:id="listeEMengjesit" layoutY="72.0" prefHeight="166.0" prefWidth="666.0">
+        <CheckBox fx:id="mengjes1" onAction="#kontrolliIChekimeveMengjes" text="Omlete Fshati                   220.0" />
+        <CheckBox fx:id="mengjes2" onAction="#kontrolliIChekimeveMengjes" text="Omlete Franceze                    225.0" />
+        <CheckBox fx:id="mengjes3" onAction="#kontrolliIChekimeveMengjes" text="Veze Benedikt                   400.0" />
+        <CheckBox fx:id="mengjes4" onAction="#kontrolliIChekimeveMengjes" text="Petullat e gjyshes                 280.0" />
+        <CheckBox fx:id="mengjes5" onAction="#kontrolliIChekimeveMengjes" text="Buke me veze                   300.0" />
+        <CheckBox fx:id="mengjes6" onAction="#kontrolliIChekimeveMengjes" text="Veze sy                    200.0" />
+    </ListView>
+
+    <Text text="Gjenero faturen perpara se te kalosh ne menune tjeter !" layoutY="251.0"  />
+    <Button fx:id="gjeneroFature" layoutX="850.0" layoutY="205.0"  prefHeight="37.0" prefWidth="159.0" onAction="#shtoNeFature"  text="Gjenero fature" />
+    <Button fx:id="porosiOnline" layoutX="6.0" layoutY="262.0" onAction="#ndrysho" prefHeight="37.0" prefWidth="170.0" text="Vazhdo per me vete" />
+    <ListView fx:id="listView" layoutX="850.0" layoutY="98.0" prefHeight="100.0" prefWidth="354.0" />
+    <Label fx:id="sasite" layoutX="674.0" layoutY="30.0" prefHeight="37.0" prefWidth="216.0" text="Vendosni Sasine qe ju duhet " userData="Menu Mengjesi" wrapText="true" />
+    <Label fx:id="Fature" layoutX="919.0" layoutY="40.0" prefHeight="37.0" prefWidth="216.0" text="FATURA JUAJ " userData="Menu Mengjesi" wrapText="true" />
+
+</AnchorPane>
+

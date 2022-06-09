@@ -3,13 +3,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.detyrekursijava.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.detyrekursijava.kontrolliKryesor">
 
     <TextField fx:id="emer" layoutX="26.0" layoutY="78.0" prefHeight="38.0" prefWidth="195.0" />
     <TextField fx:id="mbiemer" layoutX="26.0" layoutY="162.0" prefHeight="38.0" prefWidth="195.0" />
     <TextField fx:id="nrTel" layoutX="26.0" layoutY="247.0" prefHeight="38.0" prefWidth="195.0" />
     <Label fx:id="labelFature" layoutX="307.0" layoutY="30.0" prefHeight="48.0" prefWidth="420.0" text="FATURE TRANSPORTI" />
+
     <Button fx:id="butonTest" layoutX="381.0" layoutY="351.0" mnemonicParsing="false" onAction="#faturaPerOnline" prefHeight="24.0" prefWidth="142.0" text="gjenero fature " />
+
     <Label fx:id="labelEmer" layoutX="26.0" layoutY="48.0" prefHeight="38.0" prefWidth="171.0" text="Emer" />
     <Label fx:id="labelMbiemer" layoutX="26.0" layoutY="129.0" prefHeight="38.0" prefWidth="171.0" text="Mbiemer" />
     <Label fx:id="labelNrTel" layoutX="26.0" layoutY="218.0" prefHeight="38.0" prefWidth="171.0" text="Numer Telefoni" />
@@ -20,5 +24,6 @@
         <CheckBox fx:id="zona2" onAction="#cmimiIZones" text="zona 2" />
     </ListView>
    <Label fx:id="teDhena" layoutX="11.0" layoutY="6.0" prefHeight="48.0" prefWidth="420.0" text="Vendosni te dhenat tuaja" />
+
 
 </AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.detyrekursijava.kontrolliKryesor">
+    <Label fx:id="label" layoutX="-1.0"
+           prefHeight="45.0" prefWidth="869.0"
+           text="Mulliri i Vjeter ">
+        <font>
+            <Font name="System Bold Italic" size="18.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="pije" layoutX="202.0" layoutY="441.0" prefHeight="45.0" prefWidth="666.0" text="Pije" userData="Menu Pije" />
+    <TextField fx:id="apije1" layoutX="748.0" layoutY="72.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije2" layoutX="748.0" layoutY="99.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije3" layoutX="748.0" layoutY="127.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije4" layoutX="748.0" layoutY="154.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije5" layoutX="748.0" layoutY="182.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="apije6" layoutX="748.0" layoutY="210.0" prefHeight="25.0" prefWidth="60.0" />
+
+    <ListView fx:id="artikujPijeListView" layoutY="72.0" prefHeight="166.0" prefWidth="666.0">
+        <CheckBox fx:id="pije1" onAction="#kontrolliIChekimevePije" text="Kakao                    350.0" />
+        <CheckBox fx:id="pije2" onAction="#kontrolliIChekimevePije" text="Vanilla Frappe Coconout                 250.0" />
+        <CheckBox fx:id="pije3" onAction="#kontrolliIChekimevePije" text="Fredo Caffe                   150.0" />
+        <CheckBox fx:id="pije4" onAction="#kontrolliIChekimevePije" text="Orange Milkshake                   170.0" />
+        <CheckBox fx:id="pije5" onAction="#kontrolliIChekimevePije" text="Apple Mint Nojito                   150.0" />
+        <CheckBox fx:id="pije6" onAction="#kontrolliIChekimevePije" text="Kiwi Smoothie                 320.0" />
+    </ListView>
+
+    <Text text="Gjenero faturen perpara se te kalosh ne menune tjeter !" layoutY="251.0"  />
+    <Button fx:id="gjeneroFature" layoutX="850.0" layoutY="205.0"  prefHeight="37.0" prefWidth="159.0" onAction="#shtoNeFature"  text="Gjenero fature" />
+    <Button fx:id="porosiOnline" layoutX="6.0" layoutY="262.0" onAction="#ndrysho" prefHeight="37.0" prefWidth="170.0" text="Vazhdo per me vete" />
+    <ListView fx:id="listView" layoutX="850.0" layoutY="98.0" prefHeight="100.0" prefWidth="354.0" />
+    <Label fx:id="sasite" layoutX="674.0" layoutY="30.0" prefHeight="37.0" prefWidth="216.0" text="Vendosni Sasine qe ju duhet " userData="Menu Mengjesi" wrapText="true" />
+    <Label fx:id="Fature" layoutX="919.0" layoutY="40.0" prefHeight="37.0" prefWidth="216.0" text="FATURA JUAJ " userData="Menu Mengjesi" wrapText="true" />
+</AnchorPane>

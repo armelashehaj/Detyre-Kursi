@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.detyrekursijava.kontrolliKryesor">
+    <Label fx:id="label" layoutX="-1.0" prefHeight="45.0" prefWidth="869.0" text="Mulliri i Vjeter ">
+        <font>
+            <Font name="System Bold Italic" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="drekeDheDarke" layoutX="202.0" layoutY="26.0" prefHeight="45.0" prefWidth="666.0" text="Dreka dhe darka" userData="Dreka dhe Darka" />
+    <TextField fx:id="adreke1" layoutX="748.0" layoutY="72.0" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke2" layoutX="748.0" layoutY="99.6" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke3" layoutX="748.0" layoutY="127.2" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke4" layoutX="748.0" layoutY="154.8" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke5" layoutX="748.0" layoutY="182.4" prefHeight="25.0" prefWidth="60.0" />
+    <TextField fx:id="adreke6" layoutX="748.0" layoutY="210.0" prefHeight="25.0" prefWidth="60.0" />
+
+    <ListView fx:id="artikullListView" layoutY="72.0" prefHeight="166.0" prefWidth="666.0">
+        <CheckBox fx:id="dreke1" onAction="#kontrolliIChekimeveDreke" text="Supe Krem pule                    450.0" />
+        <CheckBox fx:id="dreke2" onAction="#kontrolliIChekimeveDreke" text="Supe Krem Brokoli                 400.0" />
+        <CheckBox fx:id="dreke3" onAction="#kontrolliIChekimeveDreke" text="Fileto Pule                   550.0" />
+        <CheckBox fx:id="dreke4" onAction="#kontrolliIChekimeveDreke" text="Shishqebap pule                   500.0" />
+        <CheckBox fx:id="dreke5" onAction="#kontrolliIChekimeveDreke" text="Oriz i skuqur me perime                   320.0" />
+        <CheckBox fx:id="dreke6" onAction="#kontrolliIChekimeveDreke" text="Oriz i skuqur me pule                 200.0" />
+    </ListView>
+    <Text text="Gjenero faturen perpara se te kalosh ne menune tjeter !" layoutY="251.0"  />
+
+    <Button fx:id="gjeneroFature" layoutX="850.0" layoutY="205.0" onAction="#shtoNeFature" prefHeight="37.0" prefWidth="159.0" text="Gjenero fature" />
+    <Button fx:id="porosiOnline" layoutX="6.0" layoutY="262.0" onAction="#ndrysho" prefHeight="37.0" prefWidth="170.0" text="Vazhdo per me vete" />
+    <ListView fx:id="listView" layoutX="850.0" layoutY="98.0" prefHeight="100.0" prefWidth="354.0" />
+    <Label fx:id="sasite" layoutX="674.0" layoutY="30.0" prefHeight="37.0" prefWidth="216.0" text="Vendosni Sasine qe ju duhet " userData="Menu Mengjesi" wrapText="true" />
+    <Label fx:id="Fature" layoutX="919.0" layoutY="40.0" prefHeight="37.0" prefWidth="216.0" text="FATURA JUAJ " userData="Menu Mengjesi" wrapText="true" />
+
+</AnchorPane>
